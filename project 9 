@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kenia’s Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      color: #ff83dc;
+      background: 
+        linear-gradient(rgba(255, 255, 255, 0.8), rgba(255,255,255,0.8)),
+        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtYEHodv5KLACuQv1lWv6tJRdBwyKycbEr9g&s");
+      background-size: cover;
+      background-position: center;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    header img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin: 0;
+      color: #ff009d;
+    }
+
+    h2, h3 {
+      color: #ff009d;
+      margin-bottom: 10px;
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    /* Remove blue outlines */
+    a, button, .project-card {
+      outline: none;
+    }
+
+    /* Main footer */
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      background-color: #fff;
+      color: #ff009d;
+      border-radius: 8px;
+      padding: 15px;
+    }
+
+    footer a {
+      color: #ff009d;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Skills Section */
+    .skills-section {
+      margin: 40px 0;
+      padding: 20px;
+      background: rgba(254, 127, 176, 0.6);
+      border-radius: 12px;
+    }
+
+    .skills-section h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: #ff009d;
+      margin-bottom: 30px;
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .skills-column {
+      flex: 1 1 300px;
+      max-width: 400px;
+    }
+
+    .skills-column h3 {
+      font-size: 1.5rem;
+      color: #ff009d;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .skill-box {
+      background-color: #ff009d;
+      color: white;
+      padding: 10px 15px;
+      margin: 8px 0;
+      border-radius: 20px;
+      text-align: center;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    /* Featured Projects Section */
+    .featured-projects {
+      background-color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+      color: #ff009d;
+      border-radius: 12px;
+      margin-top: 40px;
+    }
+
+    .featured-projects h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #ff009d;
+    }
+
+    .project-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .project-card {
+      background-color: #fff;
+      border: 2px solid #ff009d;
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      color: #ff009d;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .project-card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      color: #ff009d;
+    }
+
+    .project-card p {
+      font-size: 1rem;
+      color: #333;
+      font-family: Arial, sans-serif;
+      margin: 0 0 10px;
+    }
+
+    .project-card a {
+      display: inline-block;
+      margin-top: 5px;
+      color: #ff009d;
+      font-weight: bold;
+    }
+
+    .project-card a:hover {
+      text-decoration: underline;
+    }
+
+    .project-footer {
+      margin-top: 40px;
+      font-size: 0.85rem;
+      background-color: #fff;
+      color: #ff009d;
+      border-radius: 8px;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.pinimg.com/736x/15/5e/c5/155ec54eddc8b9527345f102fb5ee57d.jpg" alt="Stylized doll with tiara and bold makeup" />
+    <h1>Kenia’s Portfolio</h1>
+  </header>
+
+  <section>
+    <p>
+      <a href="mailto:Kenia@uoregon.edu">Kenia@uoregon.edu</a> |
+      <a href="tel:+15412328584">(541) 232-8584</a>
+    </p>
+  </section>
+
+  <section>
+    <h2>Personal Information</h2>
+    <p>
+      I am looking for a role where I can use my accounting knowledge, stay accurate with details,
+      and support the team’s success. Focused on learning, growing, and contributing to clear and dependable financial work.
+    </p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <p>High School Diploma | Sheldon High School, 2020–2024</p>
+  </section>
+
+  <section class="skills-section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skills-column">
+        <h3>Technical Skills</h3>
+        <div class="skill-box">reporting</div>
+        <div class="skill-box">software proficiency</div>
+        <div class="skill-box">basic computer literacy</div>
+        <div class="skill-box">social media management</div>
+      </div>
+      <div class="skills-column">
+        <h3>Soft Skills</h3>
+        <div class="skill-box">Problem Solving</div>
+        <div class="skill-box">Communication</div>
+        <div class="skill-box">Team Collaboration</div>
+        <div class="skill-box">Time Management</div>
+        <div class="skill-box">Adaptability</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kenia Gonzalez</p>
+  </footer>
+
+  <!-- Featured Projects Section -->
+  <section class="featured-projects">
+    <h2>Featured Projects</h2>
+    <div class="project-container">
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>Scene created with Turtle; city night in New York.</p>
+        <a href="index.html turtle scene 2 .html" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Project 4</h3>
+        <p>Advanced text analysis with SpaCy</p>
+        <a href="https://keniascreativelab.com/spacy-analysis" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Project 7</h3>
+        <p>Student habits vs academic performance analysis</p>
+        <a href="https://keniascreativelab.com/student-performance" target="_blank">View Project</a>
+      </div>
+    </div>
+    <footer class="project-footer">
+      <p>© 2025 Kenia Gonzalez</p>
+    </footer>
+  </section>
+</body>
+</html>
